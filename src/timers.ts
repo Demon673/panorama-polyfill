@@ -22,8 +22,8 @@ declare global {
   function clearImmediate(handle?: number): void;
 }
 
-// eslint-disable-next-line no-new-func
-const global: typeof globalThis = (() => this as any)();
+// @ts-ignore
+const global: typeof globalThis = (function () { return this as any; })();
 global.setInterval = timers.setInterval;
 global.clearInterval = timers.clearInterval;
 global.setTimeout = timers.setTimeout;

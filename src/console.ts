@@ -10,6 +10,6 @@ declare global {
   var console: Console;
 }
 
-// eslint-disable-next-line no-new-func
-const global: typeof globalThis = (() => this as any)();
+// @ts-ignore
+const global: typeof globalThis = (function () { return this as any; })();
 global.console = console;
