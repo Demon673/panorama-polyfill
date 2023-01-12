@@ -10,6 +10,4 @@ declare global {
   var console: Console;
 }
 
-// @ts-ignore
-const global: typeof globalThis = (function () { return this as any; })();
-global.console = console;
+globalThis.console = console;
