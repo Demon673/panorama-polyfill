@@ -1,15 +1,15 @@
 {
-  "name": "panorama-polyfill",
-  "version": "0.1.1",
+  "name": "@demon673/panorama-polyfill",
+  "version": "0.1.2",
   "description": "Polyfills for common JavaScript features for Valve's Panorama UI (for Dota 2 Custom Games).",
   "keywords": [
     "dota",
     "panorama",
     "polyfill"
   ],
-  "repository": "https://github.com/ark120202/panorama-polyfill",
+  "repository": "https://github.com/Demon673/panorama-polyfill",
   "license": "MIT",
-  "author": "ark120202",
+  "author": "Demon673",
   "files": [
     "lib/**/*.{js,ts}"
   ],
